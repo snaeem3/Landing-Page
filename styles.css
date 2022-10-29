@@ -1,13 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: #1F2937;
+    /* background: #1F2937; */
     color: white;
-    margin: auto 16px;
+    margin: auto auto;
+    /* padding: 0 16px; */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    padding: 0 16px;
     display: flex;
     justify-content: space-between;
+    background: #1F2937;
 }
 
 ul {
@@ -26,6 +31,8 @@ header h3 {
 }
 
 .hero {
+    padding: 0 16px;
+    background: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -35,8 +42,64 @@ header h3 {
     font-weight: 800;
 }
 
+.information {
+    padding: 0 32px;
+    background: white;
+    color:grey;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+}
+
+.quote {
+    padding: 32px 64px;
+    background: #E5E7EB;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: right;
+    font-size: 24px;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: normal;
+    text-align: left;
+}
+
+.action {
+    background: #3882F6;
+    margin: 64px;
+    padding: 32px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
 footer {
+    background: #1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    align-self: center;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 6px 32px;
+    height: fit-content;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #F9FAF8;
 }
