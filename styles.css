@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    padding: 0 16px;
+    padding: 0 64px;
     display: flex;
     justify-content: space-between;
     background: #1F2937;
@@ -17,10 +17,10 @@ header {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     display: flex;
-    gap: 5px;
+    gap: 30px;
     color: #E5E7EB;
     font-size: 18px;
   }
@@ -31,15 +31,31 @@ header h3 {
 }
 
 .hero {
-    padding: 0 16px;
+    padding: 32px 64px 64px;
     background: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
 }
 .hero h1 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 800;
+}
+
+.img-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(109, 109, 109);
+    text-align: center;
+    /* margin: 32px; */
+    padding: 32px;
+    /* height: 200px; */
+    flex-grow: 2;
+    
 }
 
 .information {
@@ -57,10 +73,28 @@ header h3 {
 
 .card-container {
     display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px
+}
+
+.card .img-placeholder {
+    background: none;
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+    height: 100px;
+    width: 100px;
 }
 
 .quote {
-    padding: 32px 64px;
+    padding: 32px 128px;
     background: #E5E7EB;
     font-weight: bold;
     color: #1F2937;
@@ -79,8 +113,8 @@ header h3 {
 .action {
     background: #3882F6;
     margin: 64px;
-    padding: 32px;
-    border-radius: 25px;
+    padding: 32px 64px;
+    border-radius: 16px;
     display: flex;
     justify-content: space-around;
 }
@@ -96,10 +130,15 @@ button {
     align-self: center;
     background-color: #3882F6;
     color: #F9FAF8;
-    padding: 6px 32px;
+    padding: 8px 32px;
     height: fit-content;
     text-align: center;
     font-size: 16px;
     border-radius: 8px;
+    font-weight: bold;
     border: 2px solid #F9FAF8;
+}
+
+.hero button {
+    border: none;
 }
